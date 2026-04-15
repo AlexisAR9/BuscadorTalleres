@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Magia en Barro",
+        "description": "Aprende las técnicas milenarias de modelado en arcilla y creación de cerámica utilitaria.",
+        "category": "Artesanías",
+        "type": "propio",
+        "image": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=300&q=80",
+        "activities": ["Modelado a mano", "Uso del torno", "Técnicas de esmaltado"],
+        "phone": "+54 11 1234-5678",
+        "social": "@magiaenbarro_cc",
+        "locationData": {
+            "address": "Universidad Nacional de General Sarmiento",
+            "hours": "Lunes a Viernes de 18:00 a 22:00 hs",
+            "lat": -34.5231018,
+            "lng": -58.7030525,
+            "modulo": 2,
+            "aula": 4
+        }
+    },
+    {
+        "id": 2,
+        "name": "Sabores del Mundo",
+        "description": "Un viaje gastronómico internacional sin salir de tu ciudad. Clases 100% prácticas.",
+        "category": "Gastronomía",
+        "type": "particular",
+        "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=300&q=80",
+        "activities": ["Cortes de vegetales", "Salsas madre", "Cocina italiana y tailandesa"],
+        "phone": "+54 11 9876-5432",
+        "social": "@saboresmundo",
+        "locationData": {
+            "address": "Coronel Bogado 284, Grand Bourg",
+            "hours": "Lunes a Viernes de 18:00 a 22:00 hs",
+            "lat": -34.497962698721544,
+            "lng": -58.71614726640112
+        }
+    },
+    {
+        "id": 3,
+        "name": "Ensambles de Madera",
+        "description": "Taller inicial de carpintería para crear tus propios muebles con herramientas manuales.",
+        "category": "Carpintería",
+        "type": "propio",
+        "image": "https://images.unsplash.com/photo-1540638349517-3abd5afc5847?auto=format&fit=crop&w=300&q=80",
+        "activities": ["Medición y corte", "Uniones y ensambles", "Acabados en madera"],
+        "phone": "+54 11 1111-2222",
+        "social": "@carpinteria_cc",
+        "locationData": {
+            "modulo": 1,
+            "aula": 5,
+            "address": "Universidad Nacional de General Sarmiento",
+            "hours": "Lunes a Viernes de 18:00 a 22:00 hs",
+            "lat": -34.5231018,
+            "lng": -58.7030525
+        }
+    },
+    {
+        "id": 4,
+        "name": "Luz y Sombra",
+        "description": "Taller de fotografía digital enfocado en retratos y paisajes urbanos.",
+        "category": "Fotografía",
+        "type": "particular",
+        "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=300&q=80",
+        "activities": ["Manejo de cámara manual", "Iluminación de estudio", "Edición en Lightroom"],
+        "phone": "+54 11 3333-4444",
+        "social": "@luzy_sombra_foto",
+        "locationData": {
+            "address": "Manuel Acevedo 900, Los Polvorines",
+            "hours": "Sábados de 10:00 a 14:00 hs",
+            "lat": -34.5188333,
+            "lng": -58.7099651
+        }
+    }
+]

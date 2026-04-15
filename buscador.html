@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Talleres - Centro Cultural</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="buscador.css">
+</head>
+<body>
+
+    <main id="map-view">
+        <div id="map"></div>
+
+        <div id="floating-search-panel">
+            <div class="search-header">
+                <h2>Centro Cultural</h2>
+                <nav class="main-nav">
+                    <a href="http://127.0.0.1:5501/registro.html" class="nav-btn">📝 Registrar Taller</a>
+                </nav>
+            </div>
+            
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input" placeholder="Buscar por nombre o dirección...">
+                <button id="search-btn" onclick="ejecutarBusqueda()">🔍</button>
+            </div>
+
+            <div id="search-results"></div>
+        </div>
+
+        <div id="detail-view" style="display: none;">
+            <div class="detail-card">
+                <div class="detail-header-bg">
+                    <button class="btn-back" onclick="cerrarDetalles()">← Volver al buscador</button>
+                    <img id="detail-img" src="" alt="Foto del taller">
+                    <h2 id="detail-title">Nombre</h2>
+                    <span id="detail-badge" class="badge">Tipo</span>
+                    <p class="detail-category"><strong>Rubro: <span id="detail-category-text"></span></strong></p>
+                </div>
+                
+                <div class="detail-content">
+                    <h3 class="section-title">Descripción General</h3>
+                    <p id="detail-description"></p>
+                    
+                    <h3 class="section-title">Actividades</h3>
+                    <ul id="detail-activities"></ul>
+                    
+                    <div id="dynamic-detail-info"></div>
+                    
+                    <h3 class="section-title">Contacto</h3>
+                    <p>📞 <span id="detail-phone"></span></p>
+                    <p>🌐 <span id="detail-social"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="buscador.js"></script>
+</body>
+</html>
