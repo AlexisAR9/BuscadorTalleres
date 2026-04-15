@@ -21,9 +21,10 @@ async function cargarTalleres() {
         let talleresLocales = dataLocal && dataLocal !== "[]" ? JSON.parse(dataLocal) : [];
 
         // Usamos Map para evitar talleres duplicados por ID
+        // cambie de t.id a t.name
         const mapaFusion = new Map();
-        talleresBase.forEach(t => mapaFusion.set(t.id, t));
-        talleresLocales.forEach(t => mapaFusion.set(t.id, t)); 
+        talleresBase.forEach(t => mapaFusion.set(t.name, t));
+        talleresLocales.forEach(t => mapaFusion.set(t.name, t)); 
 
         talleresDB = Array.from(mapaFusion.values());
         
