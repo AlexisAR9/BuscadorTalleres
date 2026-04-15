@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 100,
         "name": "Magia en Barro",
         "description": "Aprende las técnicas milenarias de modelado en arcilla y creación de cerámica utilitaria.",
         "category": "Artesanías",
@@ -19,7 +19,7 @@
         }
     },
     {
-        "id": 2,
+        "id": 200,
         "name": "Sabores del Mundo",
         "description": "Un viaje gastronómico internacional sin salir de tu ciudad. Clases 100% prácticas.",
         "category": "Gastronomía",
@@ -36,7 +36,7 @@
         }
     },
     {
-        "id": 3,
+        "id": 300,
         "name": "Ensambles de Madera",
         "description": "Taller inicial de carpintería para crear tus propios muebles con herramientas manuales.",
         "category": "Carpintería",
@@ -55,7 +55,7 @@
         }
     },
     {
-        "id": 4,
+        "id": 400,
         "name": "Luz y Sombra",
         "description": "Taller de fotografía digital enfocado en retratos y paisajes urbanos.",
         "category": "Fotografía",
