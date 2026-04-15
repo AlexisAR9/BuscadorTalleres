@@ -14,30 +14,16 @@ function inicializarMapa() {
 // 2. Cargar y Fusionar Datos (JSON + LocalStorage)
 async function cargarTalleres() {
     try {
-        const respuesta = await fetch('http://localhost:8080/api/workshops');
-        if (!respuesta.ok) throw new Error("Error en la respuesta del servidor");
-        
-        talleresDB = await respuesta.json();
-        
-        dibujarMarcadores(talleresDB);
-        mostrarResultadosLista(talleresDB);
-    } catch (error) {
-        console.error("Error al cargar los talleres desde la API:", error);
-        alert("No se pudo conectar con el servidor backend.");
-    }
-}
-/*async function cargarTalleres() {
-    try {
         const respuesta = await fetch('data.json');
         let talleresBase = await respuesta.json();
 
-        //const dataLocal = localStorage.getItem('cc_talleres');
-        //let talleresLocales = dataLocal && dataLocal !== "[]" ? JSON.parse(dataLocal) : [];
+        const dataLocal = localStorage.getItem('cc_talleres');
+        let talleresLocales = dataLocal && dataLocal !== "[]" ? JSON.parse(dataLocal) : [];
 
         // Usamos Map para evitar talleres duplicados por ID
         const mapaFusion = new Map();
         talleresBase.forEach(t => mapaFusion.set(t.id, t));
-        //talleresLocales.forEach(t => mapaFusion.set(t.id, t)); 
+        talleresLocales.forEach(t => mapaFusion.set(t.id, t)); 
 
         talleresDB = Array.from(mapaFusion.values());
         
@@ -46,7 +32,7 @@ async function cargarTalleres() {
     } catch (error) {
         console.error("Error al cargar los talleres:", error);
     }
-}*/
+}
 
 // 3. Dibujar Pines en el Mapa
 function dibujarMarcadores(talleres) {
