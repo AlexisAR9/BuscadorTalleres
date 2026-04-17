@@ -179,7 +179,10 @@ function verDetalles(t) {
     
     const dynInfo = document.getElementById('dynamic-detail-info');
     if (t.type === 'propio') {
-        dynInfo.innerHTML = `<h3 class="section-title">Ubicación</h3><p>📍 Módulo: ${t.locationData.modulo}, Aula: ${t.locationData.aula}</p>`;
+        dynInfo.innerHTML = `
+            <h3 class="section-title">Ubicación y Horarios</h3>
+            <p>📍 Módulo: ${t.locationData.modulo}, Aula: ${t.locationData.aula}</p>`;
+            <p>🕒 Horarios de atención: ${t.locationData.hours}</p>
     } else {
         dynInfo.innerHTML = `
             <h3 class="section-title">Ubicación y Horarios</h3>
