@@ -181,8 +181,9 @@ function verDetalles(t) {
     if (t.type === 'propio') {
         dynInfo.innerHTML = `
             <h3 class="section-title">Ubicación y Horarios</h3>
-            <p>📍 Módulo: ${t.locationData.modulo}, Aula: ${t.locationData.aula}</p>`;
-            <p>🕒 Horarios de atención: ${t.locationData.hours}</p>
+            <p>📍 <strong>Módulo:</strong> ${t.locationData.modulo}, <strong>Aula:</strong> ${t.locationData.aula}</p>
+            <p>🕒 <strong>Horarios de atención:</strong> ${t.locationData.hours}</p>
+        `;
     } else {
         dynInfo.innerHTML = `
             <h3 class="section-title">Ubicación y Horarios</h3>
